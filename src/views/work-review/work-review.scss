@@ -1,0 +1,174 @@
+.work-review {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 300;
+  padding-top: 65px;
+  padding-bottom: 50px;
+  background-color: $bgColor;
+  @media (min-width: $screen-l) {
+    padding-top: 56px;
+    padding-bottom: 0;
+  }
+}
+
+.work-review__wrapper {
+  min-width: 320px;
+  width: 100%;
+  padding: 0 40px;
+  margin: 0 auto;
+  @media (min-width: $screen-m) {
+  }
+  @media (min-width: $screen-l) {
+  }
+  @media (min-width: $screen-xl) {
+    padding: 0 96px;
+  }
+  @media (min-width: $screen-xxl) {
+    max-width: 1720px;
+  }
+}
+
+.work-review__manage-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.work-review__main {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-rows: max-content;
+  grid-row-gap: 78px;
+  margin-top: 52px;
+  @media (min-width: $screen-m) {
+    margin-top: 0px;
+    grid-row-gap: 0;
+    grid-template-columns: minmax(185px, 17%) auto;
+    // grid-column-gap: 8.5%;
+    grid-column-gap: 7%;
+  }
+  @media (min-width: $screen-l) {
+    grid-template-columns: minmax(220px, 17%) auto;
+  }
+  @media (min-width: $screen-xl) {
+    grid-template-columns: minmax(290px, 17%) auto;
+  }
+}
+.work-review__slider {
+  @media (min-width: $screen-m) {
+    margin-top: 58px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      height: 10px;
+      background: linear-gradient(
+        180deg,
+        rgba(245, 245, 245, 1) 50%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      height: 10px;
+      background: linear-gradient(
+        180deg,
+        rgba(245, 245, 245, 0) -5%,
+        rgba(245, 245, 245, 1) 50%
+      );
+      bottom: -3px;
+    }
+  }
+}
+
+.work-review__text {
+  @media (min-width: $screen-m) {
+    margin-top: 88px;
+  }
+  @media (min-width: $screen-xl) {
+    margin-left: 4px;
+  }
+}
+
+.work-review__title {
+  font-weight: $blackFont;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  @media (min-width: $screen-m) {
+    font-size: 2.9rem;
+    line-height: 3.2rem;
+  }
+  @media (min-width: $screen-l) {
+    font-size: 3.5rem;
+    line-height: 3.9rem;
+  }
+  @media (min-width: $screen-xl) {
+    font-size: 4rem;
+    line-height: 4.4rem;
+  }
+}
+
+.work-review__description {
+  color: $textColor;
+  margin-left: 2px;
+  margin-top: 31px;
+  @media (min-width: $screen-m) {
+  }
+  @media (min-width: $screen-l) {
+  }
+  @media (min-width: $screen-xl) {
+    margin-top: 42px;
+    margin-left: 0;
+  }
+}
+
+.work-review__subtitle,
+.work-review__task,
+.work-review__link {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  font-weight: $regularFont;
+  @media (min-width: $screen-l) {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  @media (min-width: $screen-xl) {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+  }
+}
+
+.work-review__task {
+  margin-top: 17px;
+  @media (min-width: $screen-xl) {
+    margin-top: 23px;
+  }
+}
+
+.work-review__link {
+  display: block;
+  text-decoration: underline;
+  color: $textColor;
+  margin-top: 25px;
+  &--hidden {
+    display: none;
+  }
+}
+
+.work-review__close {
+  @media (min-width: $screen-xxl) {
+    position: relative;
+    // left: 6.5%;
+  }
+  @media (min-width: $screen-xxxl) {
+    left: 102px;
+  }
+}

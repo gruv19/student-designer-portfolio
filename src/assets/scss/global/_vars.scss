@@ -1,0 +1,24 @@
+$jostFont: 'Jost', sans-serif;
+$thinFont: 100;
+$lightFont: 300;
+$regularFont: 400;
+$mediumFont: 500;
+$boldFont: 700;
+$blackFont: 900;
+
+$mainColor:#93C5E0;
+$textColor: #9F9F9F;
+$bgColor: #F5F5F5;
+
+$screen-xs: 320px;
+$screen-s: 479px;
+$screen-m: 767px;
+$screen-l: 1023px;
+$screen-xl: 1439px;
+$screen-xxl: 1721px;
+$screen-xxxl: 1919px;
+
+@mixin helpLine($color) {
+  outline: 3px solid $color; 
+  outline-offset: -3px;
+}

@@ -1,0 +1,45 @@
+<template>
+  <div class="header__contacts contacts">
+    <h2 class="contacts__title">Связаться со мной</h2>
+    <div class="contacts__socials">
+      <a
+        href="https://t.me/evg_GRU"
+        target="_blank"
+        class="contacts__icon contacts__icon--telegram"
+      >
+      </a>
+      <a
+        href="https://vk.com/ev.grusheva"
+        target="_blank"
+        class="contacts__icon contacts__icon--vk"
+      >
+      </a>
+      <a
+        href="https://www.instagram.com/gru_jess/?utm_medium=copy_link"
+        target="_blank"
+        class="contacts__icon contacts__icon--instagram"
+      >
+      </a>
+      <a
+        href="mailto:evgeniya-malceva@bk.ru"
+        target="_blank"
+        class="contacts__icon contacts__icon--email"
+      >
+      </a>
+      <a
+        href="https://www.facebook.com/profile.php?id=100007436739623"
+        target="_blank"
+        class="contacts__icon contacts__icon--facebook"
+      >
+      </a>
+    </div>
+    <img class="contacts__img" src="@/assets/images/contact__photo.png" />
+  </div>
+</template>
+
+<script>
+import "./contacts.scss";
+import contacts from "./contacts.js";
+
+export default contacts;
+</script>

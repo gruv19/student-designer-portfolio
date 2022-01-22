@@ -1,0 +1,132 @@
+.title {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  @media (min-width: $screen-m) {
+  }
+  @media (min-width: $screen-l) {
+    flex-direction: column;
+  }
+  @media (min-width: $screen-xl) {
+  }
+  @media (min-width: $screen-xxl) {
+  }
+}
+
+.title__name {
+  width: 100%;
+  font-weight: $blackFont;
+  text-align: center;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 3.3rem;
+  z-index: 10;
+  padding-bottom: 15px;
+  padding-top: 20px;
+  & strong {
+    color: #fcd381;
+  }
+  @media (min-width: $screen-s) {
+    font-size: 5.2rem;
+    padding-bottom: 28px;
+    padding-top: 30px;
+  }
+  @media (min-width: $screen-m) {
+    font-size: 7.7rem;
+  }
+  @media (min-width: $screen-l) {
+    padding: 0;
+    font-size: 10.7rem;
+    line-height: 15rem;
+  }
+  @media (min-width: $screen-xl) {
+    font-size: 15.7rem;
+    line-height: 20rem;
+  }
+  @media (min-width: $screen-xxl) {
+    font-size: 20rem;
+    line-height: 28rem;
+  }
+  @media (min-width: $screen-xxxl) {
+    font-size: 20.4rem;
+    line-height: 28rem;
+    letter-spacing: 0.4px;
+  }
+}
+
+.title__prof {
+  border-top: 1px solid rgba(#ffffff, 0.5);
+  width: 100%;
+  text-align: right;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  font-weight: $lightFont;
+  z-index: 10;
+  padding-top: 32px;
+  strong {
+    font-weight: $mediumFont;
+  }
+  @media (min-width: $screen-s) {
+  }
+  @media (min-width: $screen-m) {
+  }
+  @media (min-width: $screen-l) {
+    font-size: 1.9rem;
+    line-height: 2.9rem;
+    border-top: none;
+    border-bottom: 3px solid rgba(#ffffff, 0.5);
+    width: 51.5%;
+    position: relative;
+    left: -60px;
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+  @media (min-width: $screen-xl) {
+    width: 49.6%;
+    font-size: 2.1rem;
+    line-height: 3.1rem;
+    padding-bottom: 40px;
+  }
+  @media (min-width: $screen-xxl) {
+    width: 51%;
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+    left: -100px;
+    padding-bottom: 48px;
+  }
+}
+
+.title__img {
+  display: block;
+  max-width: 300px;
+  position: absolute;
+  right: -50px;
+  bottom: 0;
+  @media (min-width: $screen-s) {
+    max-width: 360px;
+  }
+  @media (min-width: $screen-m) {
+    max-width: 500px;
+    right: -70px;
+  }
+  @media (min-width: $screen-l) {
+    max-width: 580px;
+    right: -10px;
+  }
+  @media (min-width: $screen-xl) {
+    max-width: 630px;
+    right: 20px;
+  }
+  @media (min-width: $screen-xxl) {
+    max-width: 700px;
+    right: 100px;
+  }
+  @media (min-width: $screen-xxxl) {
+    max-width: 760px;
+    right: 30px;
+  }
+}

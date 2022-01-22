@@ -1,0 +1,20 @@
+.close-btn {
+  width: 18px;
+  height: 18px;
+  background-image: url(~@/assets/images/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home-btn {
+  width: 25px;
+  height: 27px;
+  background-image: url(~@/assets/images/home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  @media (min-width: $screen-m) {
+    width: 31px;
+    height: 31px;
+  }
+}
