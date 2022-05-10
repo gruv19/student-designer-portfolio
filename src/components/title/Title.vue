@@ -11,8 +11,10 @@
 </template>
 
 <script>
-import "./title.scss";
-import title from "./title";
-
-export default title;
+export default {
+  name: "Title",
+};
 </script>
+<style lang="scss">
+@import "./title.scss";
+</style>

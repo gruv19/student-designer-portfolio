@@ -2,7 +2,6 @@
   <header class="header">
     <div class="header__wrapper">
       <Nav class="header__nav" @changeMenu="menuHandler" :view="view" />
-      <!-- <transition name="title-contacts-slide" > -->
       <transition
         leave-active-class="animate__animated animate__fadeOutLeft animate__fast"
         enter-active-class="animate__animated animate__fadeInRight animate__faster"
@@ -15,32 +14,33 @@
 </template>
 
 <script>
-import home from "./home.js";
-import "./header.scss";
+import Nav from "@/components/nav/Nav.vue";
+import Title from "@/components/title/Title.vue";
+import Contacts from "@/components/contacts/Contacts.vue";
 
-export default home;
+export default {
+  name: "Home",
+  components: { Nav, Title, Contacts },
+  data() {
+    return {
+      flag: true,
+      view: "title",
+      loading: true,
+    };
+  },
+  methods: {
+    menuHandler(viewName) {
+      this.view = viewName;
+    },
+  },
+  watch: {
+    view() {
+      this.activeMenu = false;
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-.title-contacts-slide-enter-active {
-  animation-name: slideIn;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-}
-.title-contacts-slide-leave-active {
-  animation-name: slideOut;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-}
-
-.title-contacts-slide-enter-from {
-  animation-name: slideIn;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-}
-.title-contacts-slide-leave-to {
-  animation-name: slideOut;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-}
+@import "./header.scss";
 </style>

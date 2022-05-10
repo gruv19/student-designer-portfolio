@@ -13,7 +13,7 @@
           <h2 class="work-review__title">{{ work.title }}</h2>
           <div class="work-review__description">
             <h3 class="work-review__subtitle">{{ work.subtitle }}</h3>
-            <p class="work-review__task">{{ work.task }}</p>
+            <p class="work-review__task" v-html="work.task"></p>
             <a
               v-if="work.link"
               class="work-review__link"
@@ -31,8 +31,23 @@
 </template>
 
 <script>
-import workReview from "./work-review";
-import "./work-review.scss";
+import Slider from "@/components/slider/Slider.vue";
+import generateWork from "../../mock/work";
 
-export default workReview;
+export default {
+  name: "workReview",
+  components: { Slider },
+  data() {
+    return {
+      work: {},
+    };
+  },
+  mounted() {
+    this.work = generateWork();
+    document.title = `Работа: ${this.work.title}`;
+  },
+};
 </script>
+<style lang="scss" scoped>
+@import "./work-review.scss";
+</style>

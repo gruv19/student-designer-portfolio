@@ -1,7 +1,4 @@
-@import "../../../node_modules/glightbox/dist/css/glightbox.min.css";
-
 .collage {
-  // @include helpLine(red);
   display: none;
   @media (min-width: $screen-m) {
     position: relative;

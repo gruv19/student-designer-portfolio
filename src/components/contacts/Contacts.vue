@@ -38,8 +38,10 @@
 </template>
 
 <script>
-import "./contacts.scss";
-import contacts from "./contacts.js";
-
-export default contacts;
+export default {
+  name: "Contacts",
+};
 </script>
+<style lang="scss">
+@import "./contacts.scss";
+</style>
