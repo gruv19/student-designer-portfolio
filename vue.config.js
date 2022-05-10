@@ -10,4 +10,5 @@ module.exports = {
     },
   },
   lintOnSave: "warning",
+  publicPath: process.env.NODE_ENV === "production" ? "/student-designer-portfolio/" : "/",
 };
