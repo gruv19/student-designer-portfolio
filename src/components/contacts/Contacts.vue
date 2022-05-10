@@ -15,21 +15,9 @@
       >
       </a>
       <a
-        href="https://www.instagram.com/gru_jess/?utm_medium=copy_link"
-        target="_blank"
-        class="contacts__icon contacts__icon--instagram"
-      >
-      </a>
-      <a
         href="mailto:evgeniya-malceva@bk.ru"
         target="_blank"
         class="contacts__icon contacts__icon--email"
-      >
-      </a>
-      <a
-        href="https://www.facebook.com/profile.php?id=100007436739623"
-        target="_blank"
-        class="contacts__icon contacts__icon--facebook"
       >
       </a>
     </div>

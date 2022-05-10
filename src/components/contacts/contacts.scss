@@ -120,16 +120,6 @@
   }
 }
 
-.contacts__icon--instagram {
-  background-image: url("~@/assets/images/ico_instagram.svg");
-  width: 27px;
-  height: 27px;
-  @media (min-width: $screen-l) {
-    width: 36px;
-    height: 36px;
-  }
-}
-
 .contacts__icon--email {
   background-image: url("~@/assets/images/ico_mail.svg");
   width: 30px;
@@ -137,16 +127,6 @@
   @media (min-width: $screen-l) {
     width: 43px;
     height: 43px;
-  }
-}
-
-.contacts__icon--facebook {
-  background-image: url("~@/assets/images/ico_facebook.svg");
-  width: 19px;
-  height: 33px;
-  @media (min-width: $screen-l) {
-    width: 26px;
-    height: 45px;
   }
 }
 
